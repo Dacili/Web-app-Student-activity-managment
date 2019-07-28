@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="zadaci.css">
+	<script src="zadaci.js"></script>
+	<script src="validacija.js"></script>
+	<title>Zadaci</title>
+</head>
+<body>
+<div id="header">
+	
+		<div id="logo">
+			<img src="https://pixel.nymag.com/imgs/daily/strategist/2017/03/28/28-pink-lights-lede.w1200.h630.jpg" width=150 height=80 alt="Slika se ne moze ucitati">
+			
+		</div>
+		<div id="naslov">	
+			<h1>Odabir vježbe</h1>
+		</div>
+	
+
+	<div id="meni">
+		<ul>
+			<li><a href="login.html" >Login</a></li>
+			<li><a href="zadaci.html" >Pregled godina</a></li>
+			<li><a href="addGodina.html" >Dodavanje godine</a></li>
+			<li><a href="studenti.html" >Pregled studenata</a></li>
+			<li><a href="addStudent.html" >Dodavanje studenata</a></li>
+			<li><a href="addVjezba.html" >Dodavanje vježbe/spirale</a></li>
+			<li><a href="addZadatak.html" >Dodavanje  zadatka</a></li>
+			<li><a href="commiti.html" >Commiti</a></li>
+		
+
+		</ul>
+	</div>
+
+</div>
+
+<div id="sredina">
+	<div class="cetvrtina">
+		<p>Godina</p>
+		<nav>
+		<ul id="godina">
+			<li>Godina 2014/15</li>
+			<li>Godina 2015/16</li>
+			<li>Godina 2016/17</li>
+			<li>Godina 2017/18</li>
+			<li>Godina 2018/19</li>
+
+		</ul>
+	</nav>
+	</div>
+
+	<div class="cetvrtina">
+		<p>Student</p>
+		<form action="#">
+		<input id="tbox" name="query" type="text">
+		<br> <br>
+		<input type="button" value="Search" id="trazi" onclick="validiraj()">
+		<br>
+		<div id="greska">
+
+		</div>
+		<br> <!-- iz nekog razloga moram 2 br, da bi ocitao 1 novi red hmm.... -->
+
+		<nav>
+
+		<ul id="imena">
+			<li>Ime i prezime | index</li>
+			<li>Neko Nekić | 12345</li>
+			<li>Neko Nekić | 12345</li>
+			<li>Neko Nekić | 12345</li>
+			<li>Neko Nekić | 12345</li>
+
+		</ul>
+	</nav>
+	</form>
+	</div>
+
+	<div class="polovina">
+		<div id="gore" class="folder">
+			<p>Vježbe</p>
+			<input type="button" value="Vježba 1">
+			<input type="button" value="Vježba 2">
+			<input type="button" value="Vježba 3">
+			
+			<input type="button" value="Vježba 4">
+			<input type="button" value="Vježba 5">
+			<input type="button" value="Vježba 6">
+
+		</div>
+		<div id="dole" class="folder">
+			<p>Spirale</p>
+
+			<input type="button" value="Spirala 1">
+			<input type="button" value="Spirala 2">
+			<input type="button" value="Spirala 3">
+		
+			<input type="button" value="Spirala 4">
+			
+		</div>
+	</div>
+
+</div>
+
+<div id="footer"><br>Web tehnologije 2018/19<br><br>
+
+	</div>
+
+</body>
+</html>

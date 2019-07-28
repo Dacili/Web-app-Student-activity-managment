@@ -1,0 +1,2 @@
+naziv,pokusaj,postavka,pokusaj
+naziv,da,postavka,daaa

@@ -1,0 +1,47 @@
+
+@objects
+    naslov   #naslov
+    sredina  #sredina
+    footer   #footer
+    header   #header
+    logo     #logo
+    meni     #meni
+    polovina .polovina
+    cetvrtina       .cetvrtina
+     forma          form
+     search_dugme   input[type="submit"]
+
+
+
+= Medi haker testira nesta =
+    @on desktop, mobile
+        naslov, logo, meni:
+         inside header
+        footer:
+         below sredina 
+        search_dugme:
+         inside forma
+        logo:
+         aligned horizontally top
+         aligned vertically left
+        polovina:
+         width ~50% of viewport/width
+        cetvrtina:
+         width ~25% of viewport/width
+
+    @on desktop
+        naslov: 
+         aligned vertically right
+       
+    @on mobile
+       
+        naslov:
+         below meni
+         inside header
+
+        cetvrtina:
+         above polovina
+        
+        
+
+         

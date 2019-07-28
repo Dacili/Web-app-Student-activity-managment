@@ -1,0 +1,27 @@
+{
+  "testId" : "1-zadaci.gspec",
+  "name" : "zadaci.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  zadaci.gspec --url http://localhost/zadaci.html --size 1024x786 --htmlreport zadaci_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: zadaci.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541343672680,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541343671798,
+        "type" : "node"
+      } ],
+      "time" : 1541343661899,
+      "type" : "node"
+    } ]
+  }
+}

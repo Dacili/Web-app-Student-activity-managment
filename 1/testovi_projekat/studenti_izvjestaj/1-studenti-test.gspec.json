@@ -1,0 +1,27 @@
+{
+  "testId" : "1-studenti-test.gspec",
+  "name" : "studenti_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  studenti_test.gspec --url http://localhost/studenti.html --size 1024x786 --htmlreport studenti_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: studenti_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541337355365,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541337354503,
+        "type" : "node"
+      } ],
+      "time" : 1541337344554,
+      "type" : "node"
+    } ]
+  }
+}

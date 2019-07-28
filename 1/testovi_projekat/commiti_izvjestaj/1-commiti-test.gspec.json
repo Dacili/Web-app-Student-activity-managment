@@ -1,0 +1,27 @@
+{
+  "testId" : "1-commiti-test.gspec",
+  "name" : "commiti_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  commiti_test.gspec --url http://localhost/commiti.html --size 1024x786 --htmlreport commiti_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: commiti_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541337410162,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541337409460,
+        "type" : "node"
+      } ],
+      "time" : 1541337400692,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,49 @@
+
+@objects
+    naslov   #naslov
+    sredina  #sredina
+    footer   #footer
+    header   #header
+    logo     #logo
+    meni     #meni
+    glavniSadrzaj #glavniSadrzaj
+    
+
+
+
+= Medi haker testira nesta =
+    @on desktop, mobile
+        naslov, logo, meni:
+         inside header
+        footer:
+         below sredina
+        logo:
+         aligned horizontally top
+         aligned vertically left
+        naslov, logo, meni:
+         inside header
+        glavniSadrzaj:
+        aligned vertically centered 
+      
+
+         
+    @on desktop
+        naslov: 
+         aligned vertically right
+        glavniSadrzaj:
+         width 85% of viewport/width
+         
+
+       
+
+       
+    @on mobile
+        
+        naslov:
+         below meni
+         inside header
+        glavniSadrzaj:
+         width 100% of viewport/width
+       
+
+         

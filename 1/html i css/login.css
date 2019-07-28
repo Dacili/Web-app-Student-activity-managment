@@ -1,0 +1,50 @@
+
+body{
+	background-color:  #3F292B;
+	/**margin: auto;*/
+
+
+}
+
+#glavni {
+	height:600px;
+	/*border: 3pt solid black;*/
+	display:flex;
+}
+#login {
+	margin:auto;
+  /*display: table;
+	*/
+text-align: center;
+
+width:300px;
+	/*margin:auto;*/
+	
+	
+
+}
+
+
+
+form{
+	/*display: table-cell;
+   text-align: center;
+   vertical-align: middle;*/
+	
+	background-color: #DB7F67;
+	
+
+}
+#dugme{
+	border-radius: 3px;
+	background-color: #3F292B;
+	color:white;
+
+}
+
+input[type="text"],input[type="password"]{
+	border-radius:3px;
+	background-color: #DBBEA1;
+}
+
+

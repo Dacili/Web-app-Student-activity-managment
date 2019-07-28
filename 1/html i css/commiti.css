@@ -1,0 +1,193 @@
+
+
+body{
+	display:flex;
+	flex-direction:column;
+
+}
+
+
+#header {
+	order:1;
+	background-color: #D34F73;
+	color:#3F292B;
+
+
+}
+
+#meni ul li{
+	display:inline;
+	list-style-type: none;
+}
+
+
+
+#logo{
+	float:left;
+}
+
+#naslov{
+float:right;
+font-weight:bold;
+font-size: 15pt;
+
+}
+
+
+
+
+h1{
+	text-align: right;
+	margin-right:1em;
+	color:#3F292B;
+}
+
+
+#meni{
+	overflow:hidden;
+	clear:both;
+	font-size:1em;
+	font-weight:bold;
+	
+}
+
+/*
+div{
+border:1pt solid black;
+}
+
+*/
+
+#sredina{
+	order:2;
+	display:flex;
+	flex-direction: column;
+	height: 450px;
+	background-color: #DB7F67;
+
+}
+
+#commiti{
+	margin:auto;
+border:1pt solid white;
+width:50%;
+
+
+}
+
+table{
+	background-color:#3F292B;
+color: #DBBEA1;
+
+	
+}
+
+
+table a{
+	color: #DBBEA1;
+}
+/*
+tr:first-child /*ili n-th-child(1) isti efekat*/
+/*
+{
+    background-color:#3F292B;
+    color: #DBBEA1;
+ 
+ 	font-weight: bold;
+}
+
+ th:first-child{
+ 	background-color:#3F292B;
+ 	color: #DBBEA1;
+ 	font-weight: bold;
+   
+ }
+*/
+
+table, tr, th{
+	border:1pt solid #A37B73;
+	border-collapse: collapse;
+	
+}
+
+th{
+	width:7%;
+}
+
+
+
+a{
+	color:#3F292B;
+}
+
+
+
+
+
+
+#footer{
+
+	order:3;
+	background-color: #D34F73;
+	color:#3F292B;
+	text-align: right;
+	font-size: 1em;
+}
+
+
+@media(max-width: 600px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	
+	
+
+	#sredina{
+		order:2;
+		display:flex;
+		flex-direction:column;
+		height:400px; /*haman mi je sijeda iznikla zbog ovog -.-'    ...how can we be sure, it s already not?*/
+
+	}
+
+	
+
+	
+
+#footer{
+		order:3;
+		
+
+	}
+
+	
+}

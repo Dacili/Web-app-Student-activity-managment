@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="commiti.css">
+	<script src="committabela.js"></script>
+	<script src="validacija.js"></script>
+
+	<title>Commiti</title>
+</head>
+<body >
+			
+<div id="header">
+	
+		<div id="logo">
+			<img src="https://pixel.nymag.com/imgs/daily/strategist/2017/03/28/28-pink-lights-lede.w1200.h630.jpg" width=150 height=80 alt="Slika se ne moze ucitati">
+		</div>
+		<div id="naslov">	
+			<h1>Pregled studenata</h1>
+		</div>
+	
+
+	<div id="meni">
+		<ul>
+			<li><a href="login.html" >Login</a></li>
+			<li><a href="zadaci.html" >Pregled godina</a></li>
+			<li><a href="addGodina.html" >Dodavanje godine</a></li>
+			<li><a href="studenti.html" >Pregled studenata</a></li>
+			<li><a href="addStudent.html" >Dodavanje studenata</a></li>
+			<li><a href="addVjezba.html" >Dodavanje vježbe/spirale</a></li>
+			<li><a href="addZadatak.html" >Dodavanje  zadatka</a></li>
+			<li><a href="commiti.html" >Commiti</a></li>
+
+		</ul>
+	</div>
+
+</div>
+
+<div id="sredina">
+	<div id="lijevo">
+	<p>Student: Neko Nekić, 1234</p><br>
+	<p>Naziv vježbe/spirale: Vježba 1</p><br> 
+	<p>Repozitorij:</p><br>
+	<a href="https://bitbucket.org/Dacili/wt18md17574/src/spirala1/" target="_blank">Hyperlink</a>
+	<br>
+</div>
+	<div id="sredina_sredine"  >
+		<form id="unos">
+
+		<p><b>Kreiranje tabele:</b></p>
+		<label>Broj zadataka:</label>
+		<input id="br_zad" type="number" > <br>
+		<input type="button" value="Kreiraj tabelu" onclick="pocetna_fja(1)">	
+		<br><br><br>
+		<input type="radio" id="dodaj" name="radio">Dodaj commit
+		<input type="radio" id="edituj" name="radio">Edituj commit
+		<input type="radio" id="izbrisi" name="radio">Izbrisi commit
+
+		<br><br><br>
+		
+		<label>Redni broj zadatka:</label><br>
+		<input id="redni_br_zad_dodaj" type="number" > <br>
+		<br>
+		<label>URL:</label><br>
+		<input id="url_dodaj" type="text" > <br>
+		
+		<br>
+		
+	
+		
+		<label>Redni broj commita:</label><br>
+		<input id="redni_br_comm_edituj" type="number" > <br><br>
+		
+		<input type="button" value="OK"  onclick="pocetna_fja(2)">	
+
+		<div id="greska">
+		</div>
+		
+
+		</form>
+	</div>
+		<div id="mojDiv">
+			<br>
+			<br>
+			<br>
+		<table id="commiti">
+
+	
+		<!--
+		<tr>
+			<th>Naziv zadatka</th>
+			<th colspan="8">Commiti</th>
+			
+		</tr>
+		<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_1</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">1</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">2</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">3</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">4</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">5</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">6</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">7</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">8</a></th>
+		</tr>
+
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_2</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">1</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">2</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">3</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">4</a></th>
+			<th colspan=4></th>
+			
+			
+		</tr>
+
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_3</a></th>
+			<th><a href="https://bitbucket.org/product" target="_blank">1</a></th>
+			<th colspan=7></th>
+		</tr>
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_4</a></th>
+			<th colspan=8></th>
+			
+		</tr>
+
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_5</a></th>
+			<th colspan=8></th>
+		</tr>
+
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_6</a></th>
+			<th colspan=8></th>
+		</tr>
+
+				<tr>
+			<th><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak_7</a></th>
+			<th colspan=8></th>
+			
+		</tr>
+	</table>
+			<br>
+			<br> -->
+
+	</table>
+</div>
+
+	
+</div>
+<div id="footer"><br>Web tehnologije 2018/19<br><br>
+
+	</div>
+
+</body>
+</html>

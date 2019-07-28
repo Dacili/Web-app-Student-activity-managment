@@ -1,0 +1,27 @@
+{
+  "testId" : "1-addzadatak.gspec",
+  "name" : "addZadatak.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addZadatak.gspec --url http://localhost/addZadatak.html --size 1024x786 --htmlreport addZadatak_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addZadatak.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541342461987,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541342461143,
+        "type" : "node"
+      } ],
+      "time" : 1541342453112,
+      "type" : "node"
+    } ]
+  }
+}

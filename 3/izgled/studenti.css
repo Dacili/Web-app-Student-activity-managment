@@ -1,0 +1,222 @@
+nav ul{height:200px; 
+	width:40%; 
+	list-style-type:none; 
+	border:1px solid black; 
+	margin:0 auto; 
+	background-color:#DBBEA1; 
+	overflow-y:scroll;}
+	  
+
+
+	#meni ul li{
+	display:inline;
+	list-style-type: none;
+}
+
+#lista_godine li:first-child{
+	background-color: grey;
+}
+
+body{
+	display:flex;
+	flex-direction:column;
+	color:#3F292B;
+}
+
+
+#header {
+	order:1;
+	background-color: #D34F73;
+	color:#3F292B;
+
+}
+
+
+
+
+#logo{
+	float:left;
+}
+
+#naslov{
+float:right;
+font-weight:bold;
+font-size: 15pt;
+
+
+}
+
+
+
+
+h1{
+	text-align: right;
+	margin-right:1em;
+	color:#3F292B;
+}
+
+
+#meni{
+	overflow:hidden;
+	clear:both;
+	font-size:1em;
+	font-weight:bold;
+
+	
+}
+
+/*
+div{
+border:1pt solid black;
+}
+*/
+
+#sredina{
+	order:2;
+	display: flex;
+	height: 350px;
+}
+
+#side{
+flex:0.35;
+text-align: center;
+background-color: #DB7F67;
+font-size:13pt;
+color:#3F292B;
+
+
+}
+
+#odabir{
+	font-size:20pt;
+	font-weight: bold;
+}
+
+#lista_godine{
+	list-style:none;
+}
+
+#glavniSadrzaj{
+flex:0.65;
+background-color: #A37B73;
+display:flex;
+justify-content: center;
+
+}
+
+table, tr, th{
+	border-collapse: collapse;
+	border: 2pt solid #3F292B;;
+	text-align: left;
+	color:#3F292B;
+	
+}
+table{
+	margin:auto;
+}
+th{
+	padding: 10px;
+}
+
+#footer{
+	order:3;
+	background-color: #D34F73;
+	text-align: right;
+	font-size: 1em;
+	color:#3F292B;
+}
+
+a{
+	color:#3F292B;
+}
+
+@media(max-width: 600px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	
+	
+
+	#sredina{
+		order:2;
+		display:flex;
+		flex-direction:column;
+		height:700px; 
+	}
+
+	
+
+	#side{
+		order:1;
+
+	}
+
+	#glavniSadrzaj{
+		order:2;
+
+	}
+
+#footer{
+		order:3;
+		
+
+	}
+
+	/*
+	body{
+		display:block;
+	}
+
+	#header{
+		
+	}
+	#sredina{
+		
+		
+		
+		display:block;
+	}
+
+	#side{
+		
+	}
+	#glavniSadrzaj{
+	
+		clear:both;
+	}
+
+	#footer{
+		clear:both;
+		
+	}*/
+	
+}

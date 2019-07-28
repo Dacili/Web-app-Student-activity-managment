@@ -1,0 +1,258 @@
+
+
+body{
+	display:flex;
+	flex-direction:column;
+	/*overflow:hidden;*/
+	width:100%;
+
+}
+
+
+#header {
+	order:1;
+	background-color: #D34F73;
+	color:#3F292B;
+
+
+}
+
+#meni ul li{
+	display:inline;
+	list-style-type: none;
+}
+
+
+
+#logo{
+	float:left;
+}
+
+#naslov{
+float:right;
+font-weight:bold;
+font-size: 15pt;
+
+}
+
+
+
+
+h1{
+	text-align: right;
+	margin-right:1em;
+	color:#3F292B;
+}
+
+
+#meni{
+	overflow:hidden;
+	clear:both;
+	font-size:1em;
+	font-weight:bold;
+	
+}
+
+/*
+div{
+border:1pt solid black;
+}
+*/
+
+
+#sredina{
+	order:2;
+	display:flex;
+	/*flex-direction: column;
+	*/
+
+	height: 400px;
+	background-color: #DB7F67;
+
+}
+#sredina_sredine{
+	flex:0.40;
+	border-right:1pt solid black;
+	padding-left:20px;
+
+}
+
+#mojDiv{
+flex:0.35;
+padding-left:20px;
+}
+
+input[type="button"]{
+	width:100px;
+}
+#lijevo{
+
+	flex:0.25;
+	border-right:1pt solid black;
+
+}
+
+#unos{
+	/*border:1pt solid black;
+	*/
+}
+
+#commiti{
+	/*margin:auto;
+	*/
+border:1pt solid black;
+
+
+}
+
+
+table{
+	background-color:#3F292B;
+color: #DBBEA1;
+
+	
+}
+
+
+table a{
+	color: #DBBEA1;
+}
+
+#greska{
+	display:none;
+	background-color:orangered;
+}
+/*
+tr:first-child /*ili n-th-child(1) isti efekat*/
+/*
+{
+    background-color:#3F292B;
+    color: #DBBEA1;
+ 
+ 	font-weight: bold;
+}
+
+ th:first-child{
+ 	background-color:#3F292B;
+ 	color: #DBBEA1;
+ 	font-weight: bold;
+   
+ }
+*/
+
+table, tr, th{
+	border:1pt solid #A37B73;
+	border-collapse: collapse;
+	
+}
+/*
+th{
+	width:7%;
+}
+
+
+*/
+a{
+	color:#3F292B;
+}
+
+
+
+
+
+
+#footer{
+
+	order:3;
+	background-color: #D34F73;
+	color:#3F292B;
+	
+	font-size: 1em;
+
+	  /*position: fixed;*/
+    height: 50px;
+  box-sizing: border-box;
+    bottom: 0px;
+ width:100%;
+    margin-bottom: 0px;
+}
+
+
+th, tr{
+	/*width:17%;*/
+	border:1px solid black;
+	text-align: center;
+
+}
+
+/*
+
+*{
+	border: 1pt solid black;
+}
+*/
+
+#druga_kol{
+	width:60%;
+}
+
+
+
+
+
+@media(max-width: 600px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	
+	
+
+	#sredina{
+		order:2;
+		display:flex;
+		flex-direction:column;
+		height:400px; 
+
+	}
+
+	
+
+	
+
+#footer{
+		order:3;
+		
+
+	}
+
+	
+}

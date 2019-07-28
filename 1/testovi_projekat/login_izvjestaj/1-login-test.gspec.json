@@ -1,0 +1,63 @@
+{
+  "testId" : "1-login-test.gspec",
+  "name" : "login_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  login_test.gspec --url http://localhost/login.html --size 1024x786 --htmlreport login_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: login_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541342528197,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "login_test.gspec",
+              "lineNumber" : 8
+            },
+            "objects" : [ {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login_test.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "centered all inside body",
+                "highlight" : [ "forma", "body" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login_test.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "inside divic",
+                "highlight" : [ "forma", "divic" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "divic" : {
+              "area" : [ 356, 204, 300, 208 ]
+            },
+            "forma" : {
+              "area" : [ 356, 204, 300, 208 ]
+            },
+            "body" : {
+              "area" : [ 8, 8, 996, 600 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541342527070,
+        "type" : "node"
+      } ],
+      "time" : 1541342520414,
+      "type" : "node"
+    } ]
+  }
+}

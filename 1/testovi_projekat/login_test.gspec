@@ -1,0 +1,14 @@
+
+@objects
+   forma    #noviZadatak
+   body     #glavni
+   divic    #login
+   
+
+= Main section =
+     forma:
+      centered all inside body
+      inside divic 
+   
+     
+      

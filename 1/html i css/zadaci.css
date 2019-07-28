@@ -1,0 +1,300 @@
+nav ul{height:200px; 
+	width:60%; 
+	list-style-type:none; 
+	border:1px solid black; 
+	margin:0 auto; 
+	background-color:white; 
+	overflow-y:scroll;
+}
+	  
+
+/*for some reason not working woohoo*/
+ #godina  li:first-child {
+	background-color:grey;
+}
+#imena li:first-child {
+	background-color:grey;
+}
+
+
+
+body{
+	display:flex;
+	flex-direction:column;
+
+}
+
+
+#header {
+	order:1;
+	background-color: #D34F73;
+	color:#3F292B;
+
+
+}
+
+
+
+
+#logo{
+	float:left;
+}
+
+#naslov{
+float:right;
+font-weight:bold;
+font-size: 15pt;
+
+}
+
+
+
+
+h1{
+	text-align: right;
+	margin-right:1em;
+	color:#3F292B;
+}
+
+
+#meni{
+	overflow:hidden;
+	clear:both;
+	font-size:1em;
+	font-weight:bold;
+	
+	
+	
+}
+#meni ul li{
+	display:inline;
+	list-style-type: none;
+}
+
+/*
+
+div{
+border:1pt solid black;
+}
+
+*/
+a{
+	color:#3F292B;
+}
+
+#sredina{
+	order:2;
+	display: flex;
+	height: 390px;
+	color:#3F292B;
+	background-color: #DB7F67;
+}
+
+.cetvrtina{
+flex:0.25;
+text-align:center;
+border-right:1pt solid black;
+
+
+}
+
+#godina, #imena, #tbox{
+	background-color: #DBBEA1;
+}
+
+.polovina{
+flex:0.5;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+margin-left:10px;
+margin-right:10px;
+box-sizing: border-box;
+
+}
+
+
+/*OMG Meediiii pazi na razmaake ne prepoznajeee npr ako ima visak razmaka, nekad treba i odmaci cccc*/
+input[type="button"]{
+	background-color: #3F292B;
+	color:#DBBEA1;
+	height: 60px;
+	border: 1pt solid black;
+
+	font-size:10pt;
+	width:170px;
+}
+
+input[type="submit"]{
+	background-color:#DBBEA1;
+	color:#3F292B;
+}
+.polovina p{
+
+}
+
+
+#gore{
+	flex:1;
+	
+	
+	border-bottom: 1pt solid #3F292B ;
+	background-color: #DBBEA1;
+	
+
+
+}
+
+#dole{
+flex:1;
+background-color: #DBBEA1;
+
+
+
+
+}
+
+
+
+
+
+#footer{
+	order:3;
+	
+	text-align: right;
+	font-size: 1em;
+	background-color: #D34F73;
+	color:#3F292B;
+}
+
+
+
+@media(max-width: 600px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	
+	
+
+	#sredina{
+		order:2;
+		display:flex;
+		flex-direction:column;
+		height:1170px; /*haman mi je sijeda iznikla zbog ovog -.-'    ...how can we be sure, it s already not?*/
+
+	}
+
+	
+
+	#side{
+		order:1;
+
+	}
+
+	#glavniSadrzaj{
+		order:2;
+
+	}
+
+#footer{
+		order:3;
+		
+
+	}
+
+	
+}
+
+@media(max-width: 750px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	
+	
+
+	#sredina{
+		order:2;
+		display:flex;
+		flex-direction:column;
+		height:1170px; /*haman mi je sijeda iznikla zbog ovog -.-'    ...how can we be sure, it s already not?*/
+
+	}
+
+	
+
+	#side{
+		order:1;
+
+	}
+
+	#glavniSadrzaj{
+		order:2;
+
+	}
+
+#footer{
+		order:3;
+		
+
+	}
+
+	
+}

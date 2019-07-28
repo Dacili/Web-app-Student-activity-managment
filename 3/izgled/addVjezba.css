@@ -1,0 +1,209 @@
+
+
+
+body{
+	display:flex;
+	flex-direction:column;
+
+}
+
+
+#header {
+	order:1;
+	background-color: #D34F73;
+	color:#3F292B;
+
+
+}
+#meni ul li{
+	display:inline;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	float:left;
+}
+
+#naslov{
+float:right;
+font-weight:bold;
+font-size: 15pt;
+
+}
+
+
+
+
+h1{
+	text-align: right;
+	margin-right:1em;
+	color:#3F292B;
+}
+
+
+#meni{
+	overflow:hidden;
+	clear:both;
+	font-size:1em;
+	font-weight:bold;
+	
+}
+
+#greska{
+	display:none;
+	background-color:orangered;
+}
+
+/*
+div{
+border:1pt solid black;
+}
+
+
+*/
+a{
+	color:#3F292B;
+}
+#sredina{
+	order:2;
+	display:flex;
+	
+	background-color:  #3F292B;
+}
+
+#levo{
+	order:1;
+	flex:0.075;
+
+}
+#desno{
+	order:3;
+	flex:0.075;
+
+}
+#glavniSadrzaj{
+	order:2;
+	flex:0.85;
+
+	/*display:inline-block;*/
+	height: 410px;
+	color:#3F292B;
+	background-color: #DB7F67;
+	/*width:100%;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+
+}
+#gore{
+	border-bottom:1pt solid #3F292B;
+margin-right: 3%;
+margin-left: 3%;
+	background-color: #DBBEA1;
+}
+#dole{
+	margin-right: 3%;
+	margin-left: 3%;
+	background-color: #DBBEA1;
+}
+
+
+/*file je za browse he he*/
+input[type="text"], input[type="file"], select{
+	background-color: #DB7F67;
+}
+select{
+	width:180px;
+}
+
+
+/*
+label{
+	text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+*/
+
+
+input[type="submit"], input[type="button"]{
+	width:100px;
+	background-color: #3F292B;
+	color:white;
+}
+
+#footer{
+	order:3;
+	
+	text-align: right;
+	font-size: 1em;
+	background-color: #D34F73;
+	color:#3F292B;
+}
+
+
+@media(max-width: 600px){
+	body{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+
+	
+	}
+
+
+
+	#header{
+		order:1;
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	#logo{
+		order:1;
+	}
+
+	#meni{
+		order:2;
+		
+	}
+	#naslov{
+		order:3;
+		
+	}
+
+
+	
+	#glavniSadrzaj{
+		
+		flex:100%;
+	}
+
+	
+
+	#sredina{
+		order:2;
+		display: flex;
+		
+		
+		
+	}
+
+	
+
+	
+
+#footer{
+		order:3;
+		
+
+	}
+
+	
+}

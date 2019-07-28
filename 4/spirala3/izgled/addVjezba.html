@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="addVjezba.css">
+	<script src="addVjezba.js"></script>
+	<script src="validacija.js"></script>
+	<title>addVjezba</title>
+</head>
+<body onload="pokupi_podatke_iz_baze()">
+<div id="header">
+	
+		<div id="logo">
+			<img src="https://pixel.nymag.com/imgs/daily/strategist/2017/03/28/28-pink-lights-lede.w1200.h630.jpg" width=150 height=80 alt="Slika se ne moze ucitati">
+			
+		</div>
+		<div id="naslov">	
+			<h1>Dodavanje vježbe/spirale</h1>
+		</div>
+	
+
+	<div id="meni">
+		<ul>
+				<li><a href="login.html" >Login</a></li>
+			<li><a href="zadaci.html" >Pregled godina</a></li>
+			<li><a href="addGodina.html" >Dodavanje godine</a></li>
+			<li><a href="studenti.html" >Pregled studenata</a></li>
+			<li><a href="addStudent.html" >Dodavanje studenata</a></li>
+			<li><a href="addVjezba.html" >Dodavanje vježbe/spirale</a></li>
+			<li><a href="addZadatak.html" >Dodavanje  zadatka</a></li>
+			<li><a href="commiti.html" >Commiti</a></li>
+
+		</ul>
+	</div>
+
+</div>
+<div id="sredina">
+	<div id="levo">
+	</div>
+
+<div id="glavniSadrzaj">
+<div id="gore">
+	<form id="noviZadatak" action="http://localhost:8080/addVjezba" name="fPostojeca" method="post">
+		<h3>Dodavanje postojeće vježbe/spirale</h3>
+	
+		<label>Godina</label>
+		<br>
+
+		<select name="sGodine">
+			<!--
+			<option>2014/15</option>
+			<option>2015/16</option>
+			<option>2016/17</option>
+			<option>2017/18</option>
+			<option>2018/19</option>
+		-->
+		</select>
+		<br><br>
+
+	
+		<label>Vježbe/Spirale</label>
+		<br>
+		<select name="sVjezbe">
+			<!--
+			<option>Vježba X</option>
+			<option>Vježba 1</option>
+			<option>Vježba 2</option>
+			<option>Vježba 3</option>
+			<option>Vježba 4</option>
+			<option>Vježba 5</option>
+			<option>Vježba 6</option>
+			<option>Spirala 1</option>
+			<option>Spirala 2</option>
+			<option>Spirala 3</option>
+			<option>Spirala 4</option>
+			-->
+		</select>
+		<br>
+		<br>
+		<input type="submit"  name="submit" value="Dodaj">
+		<!--<label> No file selected...</label>-->
+		<br>
+	</form>
+</div>
+
+	<div id="dole">
+	<form name="fNova" action="http://localhost:8080/addVjezba" method="post">
+		<h3>Nova vježba/spirala</h3>
+
+		
+		<label>Naziv vježbe *</label>
+		<br>
+		<input type="text" id="tbox" name="naziv" required>
+		<br>
+
+		<label>Godina</label>
+		<br>
+		
+		<select name="sGodine">
+		<!--	<option>2014/15</option>
+			<option>2015/16</option>
+			<option>2016/17</option>
+			<option>2017/18</option>
+			<option>2018/19</option> -->
+		</select>
+		<br>
+		<input type="checkbox" name="spirala" > Spirala      
+		<input type="submit"  name="submit" value="Dodaj" onclick="validiraj()">
+		
+	</form>
+		<br><br>
+
+		<form name="fPoveziZadatak" method="post" action="">
+			<label>Vjezbe</label>
+			<select onchange="azuriraj_zadatke()" name="sVjezbe">
+			</select>
+
+<label>Zadaci</label>
+			<select name="sZadatak">
+			<!--<option>Zadatak X</option>
+			<option>Zadatak 1</option>
+			<option>Zadatak 2</option>
+			<option>Zadatak 3</option>
+			<option>Zadatak 4</option> -->
+			
+		</select>
+		<input type="submit" name="dZadatak" value="Dodaj zadatak" onclick="promijeni_action_link()">
+		</form>
+		<div id="greska">
+		</div>
+		
+	
+	
+</div>
+
+
+</div>
+<div id="desno">
+
+</div>
+
+</div>
+<div id="footer"><br>Web tehnologije 2018/19<br><br>
+
+	</div>
+
+</body>
+</html>

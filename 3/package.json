@@ -1,0 +1,20 @@
+{
+  "name": "wt2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "csv-parser": "^2.1.0",
+    "csvtojson": "^2.0.8",
+    "express": "^4.16.4",
+    "filehound": "^1.16.5",
+    "mocha": "^5.2.0",
+    "multer": "^1.4.1"
+  }
+}
