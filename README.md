@@ -6,6 +6,7 @@
   - **CSS**
   - **JAVASCRIPT** ->  also and *Ajax, Express, Sequelize*...
 * Data validation (using *REGEX*, and help functions)
+* Database phpMyAdmin
 * Allowed *CRUD* operations on main elements
 * [Link for 3rd task on HEROKU](https://webappstudentmanagment.herokuapp.com/)
 * QR link <br/>
