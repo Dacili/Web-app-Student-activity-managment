@@ -8,6 +8,4 @@
 * Data validation (using *REGEX*, and help functions)
 * Database phpMyAdmin
 * Allowed *CRUD* operations on the main elements
-* [Link for 3rd task on HEROKU](https://webappstudentmanagment.herokuapp.com/)
-* QR link <br/>
-  ![alt text](https://github.com/Dacili/Web-app-Student-activity-managment/blob/master/qrcode.PNG)
+
