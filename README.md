@@ -1,4 +1,4 @@
-# Web-app-Student-activity-managment
+# Web-app-Student-activity-management
 * Responsive layout 
 * **GALEN** tests created
 * For deploy used:
